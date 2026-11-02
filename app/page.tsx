@@ -1,4 +1,4 @@
-import { Home, TrendingUp, Users } from 'lucide-react'
+import { ArrowRight, Check, Home, TrendingUp, Users } from 'lucide-react'
 
 const loanSteps = [
   { label: 'Initial disclosures sent', owner: 'Loan partner' },
@@ -27,6 +27,23 @@ const ownershipFeatures = [
       'Lower cost per loan means pricing that holds up when your borrower is shopping. Sharper quotes, fewer deals lost on rate.',
     icon: Home,
   },
+]
+
+const teamResponsibilities = [
+  'Application setup and initial disclosures',
+  'Document collection and borrower follow-up',
+  'Processing and condition clearing',
+  'Underwriting coordination',
+  'Appraisal, title and closing scheduling',
+  'Status updates to borrowers and agents',
+]
+
+const producerFocus = [
+  'Building and deepening referral relationships',
+  'Meeting with borrowers and partners',
+  'Growing your past-client and database business',
+  'Marketing your personal brand',
+  'The moments that matter outside of work',
 ]
 
 export default function Page() {
@@ -146,6 +163,57 @@ export default function Page() {
               )
             })}
           </ul>
+        </div>
+      </section>
+
+      <section className="workflow-section" id="model" aria-labelledby="workflow-title">
+        <div className="workflow-layout">
+          <h2 id="workflow-title" className="workflow-title">
+            <span className="workflow-title-line">Your time is the business. We protect</span>
+            <span className="workflow-title-line">it.</span>
+          </h2>
+          <p className="workflow-description">
+            Every hour spent chasing paperwork is an hour you’re not building relationships. Your
+            loan team takes on the work that gets a loan closed, so you can stay in the work that
+            grows your production.
+          </p>
+
+          <div className="workflow-panels">
+            <section className="workflow-card workflow-card-team" aria-labelledby="team-handles-title">
+              <h3 id="team-handles-title" className="workflow-panel-title">
+                Your team handles
+              </h3>
+              <ul className="workflow-list team-responsibilities">
+                {teamResponsibilities.map((responsibility) => (
+                  <li className="workflow-list-item" key={responsibility}>
+                    <span className="workflow-row-icon workflow-check-icon" aria-hidden="true">
+                      <Check size={17} strokeWidth={2.5} />
+                    </span>
+                    <span>{responsibility}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <section className="workflow-card workflow-card-focus" aria-labelledby="focus-title">
+              <h3 id="focus-title" className="workflow-panel-title">
+                So you can focus on
+              </h3>
+              <ul className="workflow-list producer-focus-list">
+                {producerFocus.map((focus) => (
+                  <li className="workflow-list-item" key={focus}>
+                    <span className="workflow-row-icon workflow-arrow-icon" aria-hidden="true">
+                      <ArrowRight size={17} strokeWidth={2.5} />
+                    </span>
+                    <span>{focus}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="workflow-support-note">
+                Support cost to you: $0. Your loan team is never paid out of your basis points.
+              </p>
+            </section>
+          </div>
         </div>
       </section>
     </main>
