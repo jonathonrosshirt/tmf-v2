@@ -97,9 +97,6 @@ export default function FreeReviewSection() {
               </p>
             ) : null}
 
-            <p className="free-review-confidentiality">
-              Confidential. We never contact your current employer.
-            </p>
           </form>
         </div>
       </div>

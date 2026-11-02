@@ -121,10 +121,6 @@ export default function Page() {
                   ))}
                 </ul>
 
-                <div className="business-status">
-                  <span className="status-dot" aria-hidden="true" />
-                  <span>You: running your business.</span>
-                </div>
               </div>
             </section>
 
@@ -213,9 +209,6 @@ export default function Page() {
                   </li>
                 ))}
               </ul>
-              <p className="workflow-support-note">
-                Support cost to you: $0. Your loan team is never paid out of your basis points.
-              </p>
             </section>
           </div>
         </div>

@@ -169,10 +169,6 @@ export default function ConversionCalculator() {
               </div>
             </div>
 
-            <p className="conversion-result-disclaimer">
-              Illustrative estimate only, based on the inputs above. Not a guarantee of compensation
-              or results.
-            </p>
           </aside>
         </div>
       </div>

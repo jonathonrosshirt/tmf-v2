@@ -370,27 +370,6 @@
   text-transform: uppercase;
 }
 
-.business-status {
-  display: flex;
-  min-height: 3.8rem;
-  align-items: center;
-  gap: 0.75rem;
-  margin-top: 1.15rem;
-  border: 1px dashed rgb(123 200 63 / 42%);
-  border-radius: 1rem;
-  padding: 0.75rem 1.1rem;
-  color: var(--foreground);
-  font-size: 1rem;
-  line-height: 1.4;
-}
-
-.status-dot {
-  width: 0.6rem;
-  height: 0.6rem;
-  flex: 0 0 0.6rem;
-  border-radius: 50%;
-  background: var(--primary);
-}
 
 .support-cost {
   display: flex;
@@ -539,13 +518,6 @@
 
   .step-owner {
     font-size: 0.58rem;
-  }
-
-  .business-status {
-    min-height: 3.4rem;
-    margin-top: 0.9rem;
-    padding-inline: 0.8rem;
-    font-size: 0.86rem;
   }
 
   .support-cost {
@@ -826,12 +798,6 @@
   color: var(--primary);
 }
 
-.workflow-support-note {
-  margin: 1.5rem 0 0;
-  color: var(--muted-foreground);
-  font-size: clamp(0.95rem, 1.05vw, 1.125rem);
-  line-height: 1.55;
-}
 
 @media (max-width: 950px) {
   .workflow-layout {
@@ -896,10 +862,6 @@
     border-radius: 0.6rem;
   }
 
-  .workflow-support-note {
-    margin-top: 1.25rem;
-    font-size: 0.95rem;
-  }
 }
 
 .investment-section {
@@ -1461,13 +1423,6 @@
   line-height: 1.2;
 }
 
-.conversion-result-disclaimer {
-  max-width: 410px;
-  margin: auto 0 0;
-  color: var(--muted-foreground);
-  font-size: 0.72rem;
-  line-height: 1.5;
-}
 
 @media (max-width: 800px) {
   .conversion-calculator-layout {
@@ -1759,12 +1714,6 @@
   outline-offset: 3px;
 }
 
-.free-review-confidentiality {
-  margin: 1rem 0 0;
-  color: rgb(7 20 47 / 72%);
-  font-size: 0.74rem;
-  line-height: 1.5;
-}
 
 .free-review-notice {
   margin: 0.85rem 0 0;
