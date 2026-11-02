@@ -1,10 +1,13 @@
 import { Analytics } from '@vercel/analytics/next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
-const geistSans = Geist({ subsets: ['latin'], variable: '--font-geist-sans' })
-const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: 'variable',
+  variable: '--font-roboto',
+})
 
 export const metadata: Metadata = {
   title: 'Run it like you own it | Loan support',
@@ -42,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-background">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${roboto.variable} antialiased`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
