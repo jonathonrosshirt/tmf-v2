@@ -19,13 +19,13 @@ const ownershipFeatures = [
   {
     title: 'A full team behind you',
     description:
-      'Dedicated loan partners and processors take disclosures, docs, conditions and closing coordination off your plate, and they’re not paid out of your basis points.',
+      'Dedicated loan partners and processors take disclosures, borrower documentation, conditions and closing coordination off your plate, and they’re not paid out of your basis points.',
     icon: TrendingUp,
   },
   {
     title: 'Call your own shots',
     description:
-      'Your process, your referral partners, your brand, your schedule. Run your book like a business you own, with W-2 stability and none of the overhead.',
+      'Your process, your referral partners, your brand, your schedule. Run your book like a business you own, with none of the overhead.',
     icon: Users,
   },
   {
@@ -145,10 +145,10 @@ export default function Page() {
             <span className="ownership-title-line">Your team does the <span className="headline-highlight">heavy lifting.</span></span>
           </h2>
           <p className="ownership-description">
-            Too many producers split their week between generating loans and servicing them. At LO
-            Direct, you make the calls on how your business runs, while a dedicated loan team handles
-            everything it takes to get each file to the closing table. And because we built the
-            company lean, you keep more of what you earn.
+            Too many producers split their week between generating loans and servicing them. At
+            The Mortgage Firm, you make the calls on how your business runs, while a dedicated loan
+            team handles everything it takes to get each file to the closing table. And because we
+            built the company lean, you keep more of what you earn.
           </p>
 
           <ul className="ownership-features" aria-label="Benefits of the LO Direct model">
