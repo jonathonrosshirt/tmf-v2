@@ -122,31 +122,34 @@ const investmentTracks = [
     resources: ['Profitability analysis', 'Scaling roadmap', 'Market education'],
   },
   {
-    category: 'Leadership & coaching',
+    category: 'Coaching',
     tabLabel: 'Leadership, coaching & accountability',
-    title: 'Build the habits behind sustainable growth.',
+    title: 'Coaching from people who’ve built it themselves.',
     description:
-      'Regular coaching and accountability make ambitious goals actionable and help you stay focused on progress.',
+      'Remote doesn’t have to mean isolated. You get leaders, peers and a structure that keeps you growing.',
     steps: [
       {
-        title: 'Set a clear direction',
-        description: 'Define your priorities and what success looks like to you.',
+        title: 'Join the coaching group',
+        description:
+          'Our internal coaching group brings together sales leadership and top producers.',
       },
       {
-        title: 'Build your weekly rhythm',
-        description: 'Turn your goals into consistent business-building actions.',
+        title: 'Learn from peers',
+        description:
+          'Workshops and peer discussions with loan officers solving the same problems you are.',
       },
       {
-        title: 'Get support when it matters',
-        description: 'Work through challenges with practical feedback and coaching.',
+        title: 'Set goals and stay accountable',
+        description:
+          'Work with leadership on the goals you choose and check in on progress.',
       },
       {
-        title: 'Review progress together',
-        description: 'Recognize wins, identify gaps and reset your next steps.',
+        title: 'See how others grew',
+        description: 'Case studies from producers on our team show what worked and why.',
       },
     ],
-    outcome: 'Stronger habits, steady accountability and a path to your next level.',
-    resources: ['Producer coaching', 'Goal setting', 'Peer accountability'],
+    outcome: 'Mentors, a peer network and the habits that keep you improving.',
+    resources: ['Internal coaching group', 'Peer workshops', 'Producer case studies'],
   },
   {
     category: 'Technology & efficiency',
