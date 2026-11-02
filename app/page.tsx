@@ -5,11 +5,14 @@ import WorkYourWaySection from '../components/work-your-way-section'
 import FreeReviewSection from '../components/free-review-section'
 
 const loanSteps = [
-  { label: 'Initial disclosures sent', owner: 'Loan partner' },
-  { label: 'Appraisal ordered', owner: 'Processor' },
-  { label: 'Borrower docs collected', owner: 'Loan partner' },
-  { label: 'Conditions submitted', owner: 'Processor' },
-  { label: 'Clear to close', owner: 'Underwriting' },
+  { label: 'Application Completed and Documents Collected', owner: 'Tech Automated' },
+  { label: 'Income Calculated', owner: 'Loan Partner' },
+  { label: 'Documents Reviewed & Approval Received', owner: 'Loan Partner' },
+  { label: 'Borrower Pre-Approved', owner: 'Loan Partner + Tech' },
+  { label: 'Disclosures Sent', owner: 'Loan Partner' },
+  { label: 'Appraisal Ordered', owner: 'Processor' },
+  { label: 'Needs List, Conditions and Underwriting Submissions', owner: 'Processor' },
+  { label: 'Clear to Close', owner: 'Underwriter' },
 ]
 
 const ownershipFeatures = [
