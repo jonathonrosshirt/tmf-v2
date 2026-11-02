@@ -109,10 +109,11 @@ export default function ConversionCalculator() {
             <span className="conversion-title-line">Same effort.</span>
             <span className="conversion-title-line"><span className="headline-highlight">More closings.</span></span>
           </h2>
-          <p>
-            Competitive pricing and a team that keeps files moving lift conversion. See what a few
-            more points would be worth to you.
-          </p>
+            <p>
+              More leads are only part of the equation. We help you convert more of the leads you
+              already have, with dedicated support that keeps files moving from application to
+              closing.
+            </p>
         </header>
 
         <div className="conversion-calculator-grid">
