@@ -95,31 +95,31 @@ const investmentTracks = [
     resources: ['Conversion audits', 'Sales playbooks', 'Sales leadership'],
   },
   {
-    category: 'Business acumen',
+    category: 'Economics',
     tabLabel: 'Business acumen & profitability',
-    title: 'Know what drives a more profitable business.',
+    title: 'Know the numbers behind your business.',
     description:
-      'Clear insight into your margins and operating choices helps you grow without guessing where your effort pays off.',
+      'Great producers think like owners. We help you understand what drives your income and where your time earns the most.',
     steps: [
       {
-        title: 'Understand your numbers',
-        description: 'See how production, pricing and expenses shape profitability.',
+        title: 'Run a profitability review',
+        description: 'Break down your production, compensation and where your hours actually go.',
       },
       {
-        title: 'Set clear targets',
-        description: 'Turn business goals into measurable monthly priorities.',
+        title: 'Understand the market',
+        description: 'Learn how pricing, rate locks and market moves affect your borrowers and your deals.',
       },
       {
-        title: 'Choose the right opportunities',
-        description: 'Focus on the work and partnerships that support your model.',
+        title: 'Set targets with real math',
+        description: 'Turn income goals into the leads, conversion and partners it takes to hit them.',
       },
       {
-        title: 'Adjust with intention',
-        description: 'Review results and make informed changes before issues compound.',
+        title: 'Build your scaling roadmap',
+        description: 'A plan for growing production without burning out.',
       },
     ],
-    outcome: 'A more resilient business with a clear view of what drives profit.',
-    resources: ['Profitability planning', 'Business reviews', 'Growth scorecards'],
+    outcome: 'Clear economics and a growth plan built on your own numbers.',
+    resources: ['Profitability analysis', 'Scaling roadmap', 'Market education'],
   },
   {
     category: 'Leadership & coaching',
