@@ -923,7 +923,7 @@
   text-wrap: balance;
 }
 
-.investment-heading span {
+.investment-heading > span {
   display: block;
 }
 
@@ -1558,7 +1558,7 @@
   text-wrap: balance;
 }
 
-.work-your-way-copy h2 span {
+.work-your-way-copy h2 > span {
   display: block;
 }
 
