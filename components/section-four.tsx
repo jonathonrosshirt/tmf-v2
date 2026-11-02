@@ -34,31 +34,36 @@ const investmentTracks = [
     resources: ['Partner playbooks', 'Co-branded materials', 'Production intelligence'],
   },
   {
-    category: 'Marketing & branding',
+    category: 'Marketing & brand',
     tabLabel: 'Marketing, branding & database engagement',
-    title: 'Build a brand your database remembers.',
+    title: 'Your name is the brand. We help you build it.',
     description:
-      'Consistent, useful communication keeps you top of mind with clients and partners, not just when they need a loan.',
+      'You market yourself, not just the company. Our marketing team builds around you, and your database keeps working between transactions.',
     steps: [
       {
-        title: 'Clarify your message',
-        description: 'Define what you want clients and partners to remember about working with you.',
+        title: 'Define your brand',
+        description:
+          'Our in-house marketing team helps shape how you show up to borrowers and partners.',
       },
       {
-        title: 'Build a simple cadence',
-        description: 'Plan timely touches that give your database a reason to engage.',
+        title: 'Content built for you',
+        description:
+          'Co-branded campaigns, social content and partner materials with your name front and center.',
       },
       {
-        title: 'Show up with value',
-        description: 'Share local insight and practical guidance in the channels your audience uses.',
+        title: 'Automate the follow-up',
+        description:
+          'Database nurture and re-engagement campaigns keep you top of mind with past clients.',
       },
       {
-        title: 'Measure what resonates',
-        description: 'Use engagement and conversations to shape your next round of follow-up.',
+        title: 'Give them a reason to call',
+        description:
+          'Timely market updates give you something worth saying to your database and partners.',
       },
     ],
-    outcome: 'A recognizable personal brand and a database that keeps coming back.',
-    resources: ['Brand playbooks', 'Database campaigns', 'Content templates'],
+    outcome:
+      'A recognizable personal brand and a database that keeps sending repeat and referral business.',
+    resources: ['In-house marketing team', 'Database automation', 'Daily market updates'],
   },
   {
     category: 'Sales strategy',

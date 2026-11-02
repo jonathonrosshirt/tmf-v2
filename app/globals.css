@@ -960,8 +960,8 @@
 }
 
 .investment-tab.is-active {
-  border-color: rgb(123 200 63 / 45%);
-  background: rgb(255 255 255 / 7%);
+  border-color: rgb(123 200 63 / 55%);
+  background: var(--card);
   color: var(--foreground);
 }
 
