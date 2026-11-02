@@ -1,4 +1,5 @@
 import { ArrowRight, Check, Home, TrendingUp, Users } from 'lucide-react'
+import SectionFour from '../components/section-four'
 
 const loanSteps = [
   { label: 'Initial disclosures sent', owner: 'Loan partner' },
@@ -216,6 +217,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <SectionFour />
     </main>
   )
 }
