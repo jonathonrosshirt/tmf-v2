@@ -999,9 +999,9 @@
 
 .investment-panel {
   display: flex;
-  min-height: 29.7rem;
+  min-height: 24rem;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   border: 1px solid rgb(255 255 255 / 7%);
   border-radius: 1rem;
   background: var(--card);
@@ -1189,7 +1189,7 @@
   }
 
   .investment-panel {
-    min-height: 29rem;
+    min-height: 24rem;
   }
 }
 
