@@ -50,15 +50,15 @@
 :root {
   color-scheme: dark;
   --background: #07142f;
-  --foreground: #f7f9fd;
+  --foreground: #ffffff;
   --card: #102147;
-  --card-foreground: #f7f9fd;
+  --card-foreground: #ffffff;
   --popover: #102147;
-  --popover-foreground: #f7f9fd;
+  --popover-foreground: #ffffff;
   --primary: #7bc83f;
   --primary-foreground: #07142f;
   --secondary: rgb(255 255 255 / 5%);
-  --secondary-foreground: #f7f9fd;
+  --secondary-foreground: #ffffff;
   --muted: rgb(255 255 255 / 5%);
   --muted-foreground: #abc4e6;
   --accent: #7bc83f;
@@ -69,16 +69,16 @@
   --ring: #7bc83f;
   --chart-1: #7bc83f;
   --chart-2: #abc4e6;
-  --chart-3: #f7f9fd;
+  --chart-3: #ffffff;
   --chart-4: #102147;
   --chart-5: #07142f;
   --radius: 0.75rem;
   --sidebar: #102147;
-  --sidebar-foreground: #f7f9fd;
+  --sidebar-foreground: #ffffff;
   --sidebar-primary: #7bc83f;
   --sidebar-primary-foreground: #07142f;
   --sidebar-accent: rgb(255 255 255 / 5%);
-  --sidebar-accent-foreground: #f7f9fd;
+  --sidebar-accent-foreground: #ffffff;
   --sidebar-border: rgb(255 255 255 / 12%);
   --sidebar-ring: #7bc83f;
 }
@@ -553,5 +553,155 @@
 @media (max-width: 360px) {
   .step-owner {
     display: none;
+  }
+}
+
+.ownership-section {
+  background: var(--foreground);
+  color: var(--background);
+  padding-block: 0.125rem 1.5rem;
+}
+
+.ownership-layout {
+  width: min(1600px, calc(100% - 3rem));
+  margin-inline: auto;
+}
+
+.ownership-title {
+  max-width: 1050px;
+  margin: 0;
+  font-size: clamp(2.8rem, 3.6vw, 3.65rem);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+.ownership-title-line {
+  display: block;
+}
+
+.ownership-description {
+  width: min(1000px, 62vw);
+  margin: 1.625rem 0 0;
+  color: var(--card);
+  font-size: clamp(1.1rem, 1.45vw, 1.5rem);
+  line-height: 1.6;
+  opacity: 0.76;
+  text-wrap: pretty;
+}
+
+.ownership-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 4.375rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ownership-card {
+  display: flex;
+  min-height: 21.7rem;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid rgb(171 196 230 / 52%);
+  border-radius: 1.4rem;
+  padding: 2.5rem;
+}
+
+.ownership-icon {
+  display: grid;
+  width: 3.75rem;
+  height: 3.75rem;
+  flex: 0 0 3.75rem;
+  place-items: center;
+  border-radius: 1rem;
+  background: var(--background);
+  color: var(--primary);
+}
+
+.ownership-card-title {
+  margin: 1.2rem 0 0;
+  font-size: clamp(1.45rem, 1.85vw, 1.875rem);
+  font-weight: 650;
+  letter-spacing: -0.045em;
+  line-height: 1.25;
+}
+
+.ownership-card-description {
+  margin: 1.15rem 0 0;
+  color: var(--card);
+  font-size: clamp(1rem, 1.25vw, 1.25rem);
+  line-height: 1.6;
+  opacity: 0.76;
+  text-wrap: pretty;
+}
+
+@media (max-width: 1000px) {
+  .ownership-title {
+    font-size: clamp(2.7rem, 6vw, 3.6rem);
+  }
+
+  .ownership-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 3.5rem;
+  }
+
+  .ownership-card {
+    min-height: 20rem;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .ownership-section {
+    padding-block: 2rem 2.5rem;
+  }
+
+  .ownership-layout {
+    width: calc(100% - 2rem);
+  }
+
+  .ownership-title {
+    font-size: clamp(2.35rem, 9vw, 3.25rem);
+    line-height: 1.08;
+  }
+
+  .ownership-description {
+    width: 100%;
+    margin-top: 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+
+  .ownership-features {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    margin-top: 2.25rem;
+  }
+
+  .ownership-card {
+    min-height: 0;
+    border-radius: 1.15rem;
+    padding: 1.5rem;
+  }
+
+  .ownership-icon {
+    width: 3.4rem;
+    height: 3.4rem;
+    flex-basis: 3.4rem;
+    border-radius: 0.9rem;
+  }
+
+  .ownership-card-title {
+    margin-top: 1rem;
+    font-size: 1.45rem;
+  }
+
+  .ownership-card-description {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.55;
   }
 }

@@ -1,9 +1,32 @@
+import { Home, TrendingUp, Users } from 'lucide-react'
+
 const loanSteps = [
   { label: 'Initial disclosures sent', owner: 'Loan partner' },
   { label: 'Appraisal ordered', owner: 'Processor' },
   { label: 'Borrower docs collected', owner: 'Loan partner' },
   { label: 'Conditions submitted', owner: 'Processor' },
   { label: 'Clear to close', owner: 'Underwriting' },
+]
+
+const ownershipFeatures = [
+  {
+    title: 'A full team behind you',
+    description:
+      'Dedicated loan partners and processors take disclosures, docs, conditions and closing coordination off your plate, and they’re not paid out of your basis points.',
+    icon: TrendingUp,
+  },
+  {
+    title: 'Call your own shots',
+    description:
+      'Your process, your referral partners, your brand, your schedule. Run your book like a business you own, with W-2 stability and none of the overhead.',
+    icon: Users,
+  },
+  {
+    title: 'Be more competitive',
+    description:
+      'Lower cost per loan means pricing that holds up when your borrower is shopping. Sharper quotes, fewer deals lost on rate.',
+    icon: Home,
+  },
 ]
 
 export default function Page() {
@@ -92,6 +115,37 @@ export default function Page() {
               <strong>$0 · 0 bps</strong>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="ownership-section" aria-labelledby="ownership-title">
+        <div className="ownership-layout">
+          <h2 id="ownership-title" className="ownership-title">
+            <span className="ownership-title-line">You set the direction. Your team</span>
+            <span className="ownership-title-line">does the heavy lifting.</span>
+          </h2>
+          <p className="ownership-description">
+            Too many producers split their week between generating loans and servicing them. At LO
+            Direct, you make the calls on how your business runs, while a dedicated loan team handles
+            everything it takes to get each file to the closing table. And because we built the
+            company lean, you keep more of what you earn.
+          </p>
+
+          <ul className="ownership-features" aria-label="Benefits of the LO Direct model">
+            {ownershipFeatures.map((feature) => {
+              const Icon = feature.icon
+
+              return (
+                <li className="ownership-card" key={feature.title}>
+                  <span className="ownership-icon" aria-hidden="true">
+                    <Icon size={26} strokeWidth={2.3} />
+                  </span>
+                  <h3 className="ownership-card-title">{feature.title}</h3>
+                  <p className="ownership-card-description">{feature.description}</p>
+                </li>
+              )
+            })}
+          </ul>
         </div>
       </section>
     </main>
