@@ -176,7 +176,7 @@ const investmentTracks = [
       },
     ],
     outcome: 'An operation that scales your production without adding hours to your week.',
-    resources: ['MMI', 'Bonzo', 'MBS Highway'],
+    resources: ['Surefire CRM', 'MBS Highway', 'LenderLogix', 'MMI', 'Birdeye'],
   },
 ]
 
