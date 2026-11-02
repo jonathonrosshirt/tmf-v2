@@ -1,6 +1,7 @@
 import { ArrowRight, Check, Home, TrendingUp, Users } from 'lucide-react'
 import ConversionCalculator from '../components/conversion-calculator'
 import SectionFour from '../components/section-four'
+import WorkYourWaySection from '../components/work-your-way-section'
 
 const loanSteps = [
   { label: 'Initial disclosures sent', owner: 'Loan partner' },
@@ -221,6 +222,7 @@ export default function Page() {
 
       <SectionFour />
       <ConversionCalculator />
+      <WorkYourWaySection />
     </main>
   )
 }
