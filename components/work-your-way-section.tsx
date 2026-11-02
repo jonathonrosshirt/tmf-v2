@@ -27,7 +27,7 @@ export default function WorkYourWaySection() {
       <div className="work-your-way-layout">
         <div className="work-your-way-copy">
           <h2 id="work-your-way-title">
-            <span>Run it your way.</span>
+            <span>Run it <span className="headline-highlight">your way.</span></span>
             <span>We&apos;ll keep up.</span>
           </h2>
           <p>

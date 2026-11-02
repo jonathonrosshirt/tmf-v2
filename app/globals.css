@@ -57,6 +57,7 @@
   --popover: #102147;
   --popover-foreground: #ffffff;
   --primary: #7bc83f;
+  --primary-on-light: color-mix(in srgb, var(--primary) 60%, var(--background) 40%);
   --primary-foreground: #07142f;
   --secondary: rgb(255 255 255 / 5%);
   --secondary-foreground: #ffffff;
@@ -139,7 +140,7 @@
   display: block;
 }
 
-.hero-highlight {
+.headline-highlight {
   color: var(--primary);
 }
 
@@ -1868,4 +1869,11 @@
 .free-review-title-line,
 .investment-panel-heading > span {
   display: block;
+}
+
+.ownership-section .headline-highlight,
+.workflow-section .headline-highlight,
+.conversion-calculator-section .headline-highlight,
+.work-your-way-section .headline-highlight {
+  color: var(--primary-on-light);
 }

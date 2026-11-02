@@ -107,7 +107,7 @@ export default function ConversionCalculator() {
           <h2 id="conversion-calculator-title">
             <span className="conversion-title-line">Same leads.</span>
             <span className="conversion-title-line">Same effort.</span>
-            <span className="conversion-title-line">More closings.</span>
+            <span className="conversion-title-line"><span className="headline-highlight">More closings.</span></span>
           </h2>
           <p>
             Competitive pricing and a team that keeps files moving lift conversion. See what a few

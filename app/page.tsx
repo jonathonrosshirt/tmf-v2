@@ -59,7 +59,7 @@ export default function Page() {
             <h1 id="hero-title" className="hero-title">
               <span className="hero-title-line">Run it like you own it.</span>
               <span className="hero-title-line">
-                We’ll handle <span className="hero-highlight">the rest.</span>
+                We’ll handle <span className="headline-highlight">the rest.</span>
               </span>
             </h1>
             <p className="hero-description">
@@ -143,7 +143,7 @@ export default function Page() {
         <div className="ownership-layout">
           <h2 id="ownership-title" className="ownership-title">
             <span className="ownership-title-line">You set the direction.</span>
-            <span className="ownership-title-line">Your team does the heavy lifting.</span>
+            <span className="ownership-title-line">Your team does the <span className="headline-highlight">heavy lifting.</span></span>
           </h2>
           <p className="ownership-description">
             Too many producers split their week between generating loans and servicing them. At LO
@@ -174,7 +174,7 @@ export default function Page() {
         <div className="workflow-layout">
           <h2 id="workflow-title" className="workflow-title">
             <span className="workflow-title-line">Your time is the business.</span>
-            <span className="workflow-title-line">We protect it.</span>
+            <span className="workflow-title-line">We <span className="headline-highlight">protect it.</span></span>
           </h2>
           <p className="workflow-description">
             Every hour spent chasing paperwork is an hour you’re not building relationships. Your

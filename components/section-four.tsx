@@ -216,7 +216,7 @@ export default function SectionFour() {
     <section className="investment-section" aria-labelledby="investment-heading">
       <div className="investment-layout">
         <h2 id="investment-heading" className="investment-heading">
-          <span>How we invest in you</span>
+          <span>How we <span className="headline-highlight">invest</span> in you</span>
         </h2>
 
         <div className="investment-grid">
