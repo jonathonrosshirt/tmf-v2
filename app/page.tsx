@@ -1,47 +1,99 @@
+const loanSteps = [
+  { label: 'Initial disclosures sent', owner: 'Loan partner' },
+  { label: 'Appraisal ordered', owner: 'Processor' },
+  { label: 'Borrower docs collected', owner: 'Loan partner' },
+  { label: 'Conditions submitted', owner: 'Processor' },
+  { label: 'Clear to close', owner: 'Underwriting' },
+]
+
 export default function Page() {
   return (
-    <main
-      style={{
-        colorScheme: 'light dark',
-        position: 'relative',
-        display: 'flex',
-        minHeight: '100vh',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: 'light-dark(#fff, #000)',
-        color: 'light-dark(#000, #fff)',
-      }}
-    >
-      <svg
-        aria-hidden="true"
-        style={{ width: 80, height: 80 }}
-        width={80}
-        height={80}
-        fill="none"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-        stroke="currentColor"
-        strokeWidth="0.5"
-      >
-        <path
-          d="M14.2 14.2H17V6.9375C17 4.76288 15.2371 3 13.0625 3H5.8V5.8M14.2 14.2V7.79063L7.79062 14.2H14.2ZM14.2 14.2V17H6.9375C4.76288 17 3 15.2371 3 13.0625V5.8H5.8M5.8 5.8V12.2313L12.2313 5.8H5.8Z"
-          strokeLinejoin="round"
-        />
-      </svg>
-      <p
-        style={{
-          position: 'absolute',
-          left: '50%',
-          top: 'calc(50% + 56px)',
-          transform: 'translateX(-50%)',
-          whiteSpace: 'nowrap',
-          fontSize: '14px',
-          fontWeight: 500,
-          color: 'light-dark(#71717a, #a1a1aa)',
-        }}
-      >
-        Your v0 generation will show here.
-      </p>
+    <main className="min-h-screen bg-background font-sans text-foreground">
+      <section className="hero-section" aria-labelledby="hero-title">
+        <div className="hero-layout">
+          <div className="hero-copy">
+            <h1 id="hero-title" className="hero-title">
+              <span className="hero-title-line">Run it like you own it.</span>
+              <span className="hero-title-line">
+                We’ll handle <span className="hero-highlight">the rest.</span>
+              </span>
+            </h1>
+            <p className="hero-description">
+              Built for ambitious producers who want to call their own shots, with a full loan team
+              behind them so every hour goes to growing the business, not processing it.
+            </p>
+            <div className="hero-actions">
+              <a className="hero-button hero-button-primary" href="#loan-calculator">
+                <span>Run your numbers</span>
+                <span aria-hidden="true" className="button-arrow">
+                  →
+                </span>
+              </a>
+              <a className="hero-button hero-button-secondary" href="#model">
+                See how the model works
+              </a>
+            </div>
+          </div>
+
+          <div className="loan-visual">
+            <section className="loan-card" aria-labelledby="loan-team-title">
+              <div className="loan-window-bar">
+                <div className="window-dots" aria-hidden="true">
+                  <span />
+                  <span />
+                  <span />
+                </div>
+                <span className="loan-file-label font-mono">Loan file · Purchase</span>
+              </div>
+
+              <div className="loan-card-content">
+                <div className="loan-team-header">
+                  <div>
+                    <p className="loan-kicker">Your loan team</p>
+                    <h2 id="loan-team-title" className="loan-team-title">
+                      Handling it for you
+                    </h2>
+                  </div>
+                  <div className="loan-avatars" role="group" aria-label="Your loan team">
+                    <span className="loan-avatar avatar-partner" title="Loan partner">
+                      LP
+                    </span>
+                    <span className="loan-avatar avatar-processor" title="Processor">
+                      PR
+                    </span>
+                    <span className="loan-avatar avatar-underwriting" title="Underwriting">
+                      UW
+                    </span>
+                  </div>
+                </div>
+
+                <ul className="loan-steps" aria-label="Loan file progress">
+                  {loanSteps.map((step) => (
+                    <li className="loan-step" key={step.label}>
+                      <span className="step-check" role="img" aria-label="Complete" />
+                      <span className="step-label">{step.label}</span>
+                      <span className="step-owner font-mono">{step.owner}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="business-status">
+                  <span className="status-dot" aria-hidden="true" />
+                  <span>You: running your business.</span>
+                </div>
+              </div>
+            </section>
+
+            <div
+              className="support-cost"
+              aria-label="Support cost to you: zero dollars, zero basis points"
+            >
+              <span className="support-cost-label font-mono">Support cost to you</span>
+              <strong>$0 · 0 bps</strong>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
