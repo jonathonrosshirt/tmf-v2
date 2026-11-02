@@ -81,6 +81,11 @@
   --sidebar-accent-foreground: #ffffff;
   --sidebar-border: rgb(255 255 255 / 12%);
   --sidebar-ring: #7bc83f;
+  --page-content-max: 1240px;
+  --page-gutter-total: 3rem;
+  --page-section-block-space: clamp(4rem, 6vw, 5.5rem);
+  --page-section-intro-gap: 1.25rem;
+  --page-section-content-gap: clamp(2rem, 3vw, 2.75rem);
 }
 
 @layer base {
@@ -1804,5 +1809,55 @@
 
   .free-review-field-full {
     grid-column: auto;
+  }
+}
+
+.hero-section,
+.ownership-section,
+.workflow-section,
+.investment-section,
+.conversion-calculator-section,
+.work-your-way-section,
+.free-review-section {
+  padding-block: var(--page-section-block-space);
+}
+
+.hero-layout,
+.ownership-layout,
+.workflow-layout,
+.investment-layout,
+.conversion-calculator-layout,
+.work-your-way-layout,
+.free-review-layout {
+  width: min(var(--page-content-max), calc(100% - var(--page-gutter-total)));
+  margin-inline: auto;
+}
+
+.ownership-description,
+.workflow-description,
+.conversion-calculator-intro > p,
+.work-your-way-copy > p,
+.free-review-copy > p {
+  margin-top: var(--page-section-intro-gap);
+}
+
+.ownership-features,
+.workflow-panels,
+.investment-grid,
+.conversion-calculator-grid {
+  margin-top: var(--page-section-content-gap);
+}
+
+@media (max-width: 700px) {
+  :root {
+    --page-gutter-total: 2rem;
+    --page-section-block-space: 3rem;
+    --page-section-intro-gap: 1rem;
+    --page-section-content-gap: 1.5rem;
+  }
+
+  .work-your-way-layout,
+  .free-review-layout {
+    gap: var(--page-section-content-gap);
   }
 }
