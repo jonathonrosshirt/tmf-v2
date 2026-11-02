@@ -1134,8 +1134,9 @@
 }
 
 .investment-resource-list {
-  display: grid;
-  justify-items: start;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 0.25rem;
   margin: 0;
   padding: 0;

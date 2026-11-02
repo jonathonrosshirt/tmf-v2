@@ -66,31 +66,33 @@ const investmentTracks = [
     resources: ['In-house marketing team', 'Database automation', 'Daily market updates'],
   },
   {
-    category: 'Sales strategy',
+    category: 'Sales & conversion',
     tabLabel: 'Sales strategy, conversion & pipeline',
-    title: 'Turn the right conversations into closed loans.',
+    title: 'Close more of the opportunities you already earn.',
     description:
-      'A thoughtful sales process helps you follow up with confidence and turn more opportunities into closed loans.',
+      'The same leads with a better process means more closings. We help you find where deals stall and fix it.',
     steps: [
       {
-        title: 'See the whole pipeline',
-        description: 'Keep every prospect, active file and next step visible.',
+        title: 'Audit your conversion',
+        description: 'We trace where your leads drop off, from first call to clear to close.',
       },
       {
-        title: 'Follow up with purpose',
-        description: 'Use timely, relevant outreach that keeps the conversation moving.',
+        title: 'Borrow what’s working',
+        description:
+          'Strategies that are winning across our team, like seller credits and rate buydowns, packaged into playbooks.',
       },
       {
-        title: 'Guide the decision',
-        description: 'Give borrowers clarity on their options, timing and what happens next.',
+        title: 'Review your pipeline',
+        description:
+          'Work through your pipeline with sales leadership to prioritize and forecast.',
       },
       {
-        title: 'Review your conversion',
-        description: 'Spot where deals stall and strengthen the right part of your process.',
+        title: 'Keep deals moving',
+        description: 'Your loan team handles the file so good opportunities don’t die in process.',
       },
     ],
-    outcome: 'A steadier pipeline and a repeatable path from first conversation to closing.',
-    resources: ['Pipeline reviews', 'Conversion coaching', 'Follow-up systems'],
+    outcome: 'Higher conversion and a pipeline you can actually forecast.',
+    resources: ['Conversion audits', 'Sales playbooks', 'Sales leadership'],
   },
   {
     category: 'Business acumen',
