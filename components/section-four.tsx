@@ -152,31 +152,31 @@ const investmentTracks = [
     resources: ['Internal coaching group', 'Peer workshops', 'Producer case studies'],
   },
   {
-    category: 'Technology & efficiency',
+    category: 'Systems',
     tabLabel: 'Technology, automation & efficiency',
-    title: 'Make more room for the work only you can do.',
+    title: 'Systems that give you your time back.',
     description:
-      'The right tools and clear processes reduce busywork while keeping each loan moving and every client informed.',
+      'The right tools take repetitive work off your plate, and we pay for the ones most companies leave to their loan officers.',
     steps: [
       {
-        title: 'Map repetitive work',
-        description: 'Identify tasks that slow your day or cause handoff delays.',
+        title: 'See your market clearly',
+        description: 'Production intelligence shows where business and partners are moving.',
       },
       {
-        title: 'Simplify the process',
-        description: 'Use clear workflows to keep files and follow-ups organized.',
+        title: 'Automate the follow-up',
+        description: 'CRM automation handles nurture and reminders so nothing slips.',
       },
       {
-        title: 'Automate the routine',
-        description: 'Put reminders and handoffs on dependable systems.',
+        title: 'Stay informed daily',
+        description: 'Market intelligence keeps you current on rates and timing.',
       },
       {
-        title: 'Keep the human connection',
-        description: 'Let technology support your relationships, not replace them.',
+        title: 'Streamline operations',
+        description: 'Efficient processes and a full loan team keep admin from landing on you.',
       },
     ],
-    outcome: 'More time for borrowers and partners, with less friction behind the scenes.',
-    resources: ['Workflow templates', 'Automation guidance', 'Technology toolkit'],
+    outcome: 'An operation that scales your production without adding hours to your week.',
+    resources: ['MMI', 'Bonzo', 'MBS Highway'],
   },
 ]
 
