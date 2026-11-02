@@ -27,8 +27,8 @@ export default function WorkYourWaySection() {
       <div className="work-your-way-layout">
         <div className="work-your-way-copy">
           <h2 id="work-your-way-title">
-            <span>Run it your way. We&apos;ll keep</span>
-            <span>up.</span>
+            <span>Run it your way.</span>
+            <span>We&apos;ll keep up.</span>
           </h2>
           <p>
             Open houses, referral partners, the phone, social — however you generate business, your

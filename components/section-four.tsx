@@ -263,7 +263,13 @@ export default function SectionFour() {
           >
             <div className="investment-panel-main">
               <p className="investment-eyebrow font-mono">{activeTrack.category}</p>
-              <h3 className="investment-panel-heading">{activeTrack.title}</h3>
+              <h3 className="investment-panel-heading">
+                {activeTrack.title.split(/(?<=[.!?])\s+/).map((sentence, index, sentences) => (
+                  <span key={`${activeTrack.category}-${index}`}>
+                    {sentence}{index < sentences.length - 1 ? ' ' : ''}
+                  </span>
+                ))}
+              </h3>
               <p className="investment-panel-description">{activeTrack.description}</p>
 
               <h4 className="investment-how-title font-mono">How it works</h4>

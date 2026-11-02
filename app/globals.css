@@ -1863,3 +1863,9 @@
     gap: var(--page-section-content-gap);
   }
 }
+
+.conversion-title-line,
+.free-review-title-line,
+.investment-panel-heading > span {
+  display: block;
+}

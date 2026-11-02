@@ -142,8 +142,8 @@ export default function Page() {
       <section className="ownership-section" aria-labelledby="ownership-title">
         <div className="ownership-layout">
           <h2 id="ownership-title" className="ownership-title">
-            <span className="ownership-title-line">You set the direction. Your team</span>
-            <span className="ownership-title-line">does the heavy lifting.</span>
+            <span className="ownership-title-line">You set the direction.</span>
+            <span className="ownership-title-line">Your team does the heavy lifting.</span>
           </h2>
           <p className="ownership-description">
             Too many producers split their week between generating loans and servicing them. At LO
@@ -173,8 +173,8 @@ export default function Page() {
       <section className="workflow-section" id="model" aria-labelledby="workflow-title">
         <div className="workflow-layout">
           <h2 id="workflow-title" className="workflow-title">
-            <span className="workflow-title-line">Your time is the business. We protect</span>
-            <span className="workflow-title-line">it.</span>
+            <span className="workflow-title-line">Your time is the business.</span>
+            <span className="workflow-title-line">We protect it.</span>
           </h2>
           <p className="workflow-description">
             Every hour spent chasing paperwork is an hour you’re not building relationships. Your

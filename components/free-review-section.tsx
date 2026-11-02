@@ -15,7 +15,9 @@ export default function FreeReviewSection() {
       <div className="free-review-layout">
         <div className="free-review-copy">
           <h2 id="free-review-title">
-            Not looking to move? Good. Start with a free production review.
+            <span className="free-review-title-line">Not looking to move?</span>
+            <span className="free-review-title-line">Good.</span>
+            <span className="free-review-title-line">Start with a free production review.</span>
           </h2>
           <p>
             We&apos;ll look at your conversion, pricing and referral mix, and hand you a scaling roadmap
