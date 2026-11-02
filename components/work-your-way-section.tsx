@@ -8,7 +8,8 @@ const benefits = [
   },
   {
     title: 'Your schedule, your call',
-    description: 'Kid’s game on Saturday? Your team keeps files moving without you.',
+    description:
+    'Take a real vacation and truly unplug. Your loan team keeps files moving while you’re away, so you can be present with family.',
   },
   {
     title: 'Your process, supported',
